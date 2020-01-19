@@ -103,8 +103,8 @@ namespace SpecFlowJenTCGIT.StepDefs
                         scenario.CreateNode<Then>(_scenarioContext.StepContext.StepInfo.Text).Fail
                             (_scenarioContext.TestError.Message + "\n" + _scenarioContext.TestError.StackTrace);
                         String Path = TestUtil.TakeScreenshotAtEndOfTest(random.Next().ToString());
-                        scenario.Log(Status.Info, "Screenshot: ", MediaEntityBuilder.CreateScreenCaptureFromPath(".\\" + Path).Build());
-                        scenario.AddScreenCaptureFromPath(Path);
+                        //scenario.Log(Status.Info, "Screenshot: ", MediaEntityBuilder.CreateScreenCaptureFromPath(".\\" + Path).Build());
+                        //scenario.AddScreenCaptureFromPath(Path);
                     }
                     else
                     {
